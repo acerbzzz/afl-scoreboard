@@ -2,7 +2,7 @@ from utils import get_file
 import json
 import os
 
-DEFAULT_PREFERRED_TEAMS = ["BUF", "NO"]
+DEFAULT_PREFERRED_TEAMS = ["FRE"]
 DEFAULT_SCROLLING_SPEED = 2
 DEFAULT_ROTATE_RATE = 15.0
 MINIMUM_ROTATE_RATE = 2.0
@@ -23,8 +23,7 @@ class ScoreboardConfig:
         self.rotation_preferred_team_live_halftime = json["rotation"]["while_preferred_team_live"]["during_halftime"]
         self.scrolling_speed = json["scrolling_speed"]
 
-        # use helmet logos or regular team logos
-        self.helmet_logos = json["use_helmet_logos"]
+       
 
         # Debug
         self.debug = json["debug"]
